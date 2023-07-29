@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins' , sans-serif ;
+}
+body{
+    /* background-color:rgb(16, 16, 75); */
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.container{
+    top: 0;
+    width: 100%;
+    height: 80px;
+    /* background-color:rgb(43, 43, 114); */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    box-shadow: 2px 4px lightgrey;
+    overflow: hidden;
+}
+.container:hover{
+    box-shadow: 2px 5px 3px darkgrey;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 85px;
+    cursor: pointer;
+    margin: 0;
+}
+.menu-icon{
+    width:40px;
+    cursor: pointer;
+    display: none;
+    margin-right: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: skyblue;
+    font-size: 16px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px 0 100px;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 150px;
+}
+.col-1 h2{
+    font-size: 70px;
+}
+.col-1 h3{
+    font-size: 50px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 39px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+button{
+    width: 140px;
+    border:0;
+    padding: 12px 10px;
+    outline:none;
+    color: #fff;
+    background: linear-gradient(to right, blue, black);
+    border-bottom: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    margin: 30px 0;
+}
+button img{
+    width: 30px;
+    display: none;
+
+}
+button:hover img{
+    display: block;
+    padding-left: 15px;
+}
+button:hover{
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 60%;
+    background: linear-gradient(skyblue,rgba(10, 10, 175, 0.432));
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+#element{
+    color: rgb(190, 164, 212);
+    font-size: 2.5rem;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display:flex;
+    align-items: center;
+}
+.col-2 #pic{
+    margin-left: 100px;
+    width: 60%;
+}
+#about-me{
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;
+
+}
+#about{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    background: whitesmoke;
+    box-shadow: 2px3px lightcyan;
+    border-radius: 30px;
+}
+.col-3 .neeru {
+    width: 330px;
+    height: 400px;
+    margin: 20px 70px ;
+    border-radius: 10%;
+}
+#about div .col-4{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: justify;
+    padding-right: 40px;
+    color:#6D67E4 ;
+}
+#about div .col-4 h3{
+    font-size: 1.75rem;
+}
+#about div .col-4 h4{
+    font-size: 1.25rem;
+}
+#about div .col-4 p{
+    font-size: 1.15rem;
+}
+#skills{
+    margin-top: 20px;
+    width: 100%;
+}
+#skills h2{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #060047;
+    margin-bottom: 10px;
+}
+.flex-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 0 200px;
+    padding: 0;
+    width: 70%;
+}
+.box-caption {
+    position: absolute;
+    max-width: 900px;
+    word-break: break-word;
+}
+.flex-box{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    word-break: break-word;
+    padding-bottom: 40px;
+    color: #060047;
+}
+.box-flex-bottom {
+    align-items: flex-end;
+}
+.flex-box img{
+    width: 150px;
+    height: 130px;
+}
+.social-links img{
+    /* width: 10px; */
+    height: 35px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social-links{
+    text-align: center;
+}
+#contactUs {
+    width: 90%;
+    height: 250px;
+    margin-left: 55px;
+    
+}
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.container-2 ul li {
+    list-style-type: none;
+}
+.container-2 ul a {
+    text-decoration: none;
+    color: black;
+    margin: 0 30px;
+}
+.container-2 ul a:hover {
+    color: rgb(178, 178, 241);
+    font-size: 17px;
+}
+.greeting{
+    padding-top: 10px;
+    text-align: center;
+}
+.greet{
+    width: 80%;
+    margin-left: 130px;
+}
+@media screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background:linear-gradient(skyblue,rgb(90, 187, 226));
+        position: absolute;
+        top: 70px;
+        right: 0;
+        z-index: 2;
+        overflow: hidden;
+        align-items: center;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: black;
+        font-size: 15px;
+    }
+    .menu-icon{
+        display:block;
+        margin-left: 470px;
+    }
+    #menuList{
+        display: block;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .col-2 img{
+        min-width: fit-content;
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-right: 50px;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 50px 0 0;
+    }
+    .col-1 h2{
+        font-size: 55px;
+    }
+    .col-1 h3{
+        font-size: 45px;
+    }
+    #element{
+        font-size: 2.25rem;
+    }
+    .info{
+        display: grid;
+        color: white;
+        background:#FFBABA;
+    }
+    .info .col-3{
+        grid-template-columns: 100%;
+    }
+    .info .col-3 .neeru{
+        width: 320px;
+        height: 400px;
+        /* align-items: center;
+        justify-content: center; */
+        border-radius: 100%;
+        margin-left: 100px;
+    }
+    .info .col-4{
+        grid-template-columns: 100%;
+        align-items: center;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    #about div .col-4{
+        color: #7B2869;
+    }
+    .flex-container{
+        margin: 0;
+        width: 100%;
+    }
+    .container-2 ul a{
+        margin: 10px 10px;
+    }
+    .container-1 p{
+        width:170px;
+    }
+    .container-1{
+        margin-left: 5px;
+    }
+    .social-links{
+        margin-top: 10px;
+    }
+    .greet{
+        margin-left: 45px;
+    }
+}
